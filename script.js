@@ -13,6 +13,7 @@ var year = date.getFullYear();
 
 // 3. Adjust month if needed (JavaScript months are 0-based)
 month = month + 1;
+
 // 4. Add leading zeros to month/day if needed
 if (month < 10) {
     month = "0" + month;
@@ -22,7 +23,9 @@ if (day < 10) {
 }
 // 5. Create a string in the format: "Today is MM/DD/YYYY"
 var formattedData = "Today is " + month + "/" + day + "/" + year;
+
 // 6. Display the result in the element with id="dateOutput"
+// used getElementById to specify which element to update and .textContent to change the text of the element to our formatted date string
 document.getElementById("dateOutput").textContent = formattedData;
 
 
@@ -49,16 +52,19 @@ var nonNumString = "Wasabi"
 //    b. Check if it is NaN using Number.isNaN()
 //    c. Check if it is an integer using Number.isInteger()
 
+// converting each string
 convertedString1 = Number(numString1)
 convertedString2 = Number(numString2)
 convertedString3 = Number(decString)
 convertedString4 = Number(nonNumString)
 
+// checking if each converted string is NaN
 isNaN1 = Number.isNaN(convertedString1)
 isNaN2 = Number.isNaN(convertedString2)
 isNaN3 = Number.isNaN(convertedString3)
 isNaN4 = Number.isNaN(convertedString4)
 
+// checking if each converted string is an integer
 isInteger1 = Number.isInteger(convertedString1)
 isInteger2 = Number.isInteger(convertedString2)
 isInteger3 = Number.isInteger(convertedString3)
@@ -83,11 +89,13 @@ var sentence4 = "Original: '" + nonNumString + "' -> \tConverted: " + convertedS
 // 4. Combine all your results into ONE string
 //    (you can use + to join multiple strings)
 
+// combining all sentences into one string and adding <br> between to create line breaks when displayed on the page
 var finalResult = sentence1 + "<br>" + sentence2 + "<br>" + sentence3 + "<br>" + sentence4;
+
 // TODO:
 // 5. Display the final result inside the element:
 //    id="numberConversionOutput"
-
+// used getElementById to specify which element to update and .innerHTML to change the content of the element to our final result with the <br> html tags
 document.getElementById("numberConversionOutput").innerHTML = finalResult;
 
 // ==========================
@@ -110,7 +118,10 @@ var num6 = 93
 
 // Grade score calculator
 
+// adding up the numbers to get the total
 var total = num1 + num2 + num3 + num4 + num5 + num6
+
+// calculating the average of the scores
 var average = total / 6
     
 // 3. Use at least ONE of the following:
@@ -119,6 +130,7 @@ var average = total / 6
 //    - Number.parseInt()
 //    - Number.parseFloat()
 
+// using toFixed(2) to format the average to be 2 decimal places
 var formattedAverage = average.toFixed(2);
 
 
@@ -127,7 +139,7 @@ var formattedAverage = average.toFixed(2);
 var mathOutput = "Your Grade Scores: <br> "+ num1 + ", " + num2 + ", " + num3 + ", " + num4 + ", " + num5 + ", " + num6 + "<br><br>Total Score: " + total + "<br>" + "Average Score: " + formattedAverage;
 
 
-
+// using my first if/else statement to check the average score and display a letter grade based on it, appending it to the result output
 if(average >= 90) {
     mathOutput += "<br>" + "Grade: A"
 }else if(average >= 80) {
@@ -140,6 +152,7 @@ if(average >= 90) {
     mathOutput += "<br>" + "Grade: F"
 }
 
+// using my second if/else statement to check if the total score is a passing score (70% of total possible points) and display a message based on that, appending it to the result output
 if(total >= (6*100)*.7) {
     mathOutput += "<br>" + "Congratulations, you are passing!"
 }else {
@@ -149,6 +162,7 @@ if(total >= (6*100)*.7) {
 
 
 // 5. Display the results inside the element with id="mathOutput"
+// used getElementById to specify which element to update and .innerHTML to change the content of the element, making sure it uses the line breaks <br> we specified
 document.getElementById("mathOutput").innerHTML = mathOutput;
 
 

@@ -1,7 +1,10 @@
+/* Set the background color for the entire page */
 html, body{
     background: #f5e4ab;
 }
 
+/* Style h1 for the header at the top with a background gradient, boxshadow, and aligning it to the center */
+/* Also changed the font as well as padding/margins */
 h1 {
     background: linear-gradient(#ffffff, #eeeeee, #e7e7e7);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -12,6 +15,9 @@ h1 {
     margin: 0;
 }
 
+/* Style the "cards", adding it to each element */
+/* Used the same linear gradient as the header, as well as the boxshadow and border radius */
+/* Changed the width to be smaller than header as well as padding and margins to make them more visually seperated */
 .card {
     background: linear-gradient(#ffffff, #eeeeee, #e7e7e7);
     border-radius: 10px;
