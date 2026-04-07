@@ -1,0 +1,23 @@
+html, body{
+    background: #f5e4ab;
+}
+
+h1 {
+    background: linear-gradient(#ffffff, #eeeeee, #e7e7e7);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 25px;
+    margin: 0;
+}
+
+.card {
+    background: linear-gradient(#ffffff, #eeeeee, #e7e7e7);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 95%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+}
