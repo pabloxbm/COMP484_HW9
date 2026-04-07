@@ -39,10 +39,10 @@ document.getElementById("dateOutput").textContent = formattedData;
 //    - at least 1 decimal string (example: "19.75")
 //    - at least 1 non-numeric string (example: "hello")
 
-var numString1 = "29"
-var numString2 = "60"
-var decString = "17.38"
-var nonNumString = "Wasabi"
+var numString1 = "29";
+var numString2 = "60";
+var decString = "17.38";
+var nonNumString = "Wasabi";
 
 
 // TODO:
@@ -53,22 +53,22 @@ var nonNumString = "Wasabi"
 //    c. Check if it is an integer using Number.isInteger()
 
 // converting each string
-convertedString1 = Number(numString1)
-convertedString2 = Number(numString2)
-convertedString3 = Number(decString)
-convertedString4 = Number(nonNumString)
+convertedString1 = Number(numString1);
+convertedString2 = Number(numString2);
+convertedString3 = Number(decString);
+convertedString4 = Number(nonNumString);
 
 // checking if each converted string is NaN
-isNaN1 = Number.isNaN(convertedString1)
-isNaN2 = Number.isNaN(convertedString2)
-isNaN3 = Number.isNaN(convertedString3)
-isNaN4 = Number.isNaN(convertedString4)
+isNaN1 = Number.isNaN(convertedString1);
+isNaN2 = Number.isNaN(convertedString2);
+isNaN3 = Number.isNaN(convertedString3);
+isNaN4 = Number.isNaN(convertedString4);
 
 // checking if each converted string is an integer
-isInteger1 = Number.isInteger(convertedString1)
-isInteger2 = Number.isInteger(convertedString2)
-isInteger3 = Number.isInteger(convertedString3)
-isInteger4 = Number.isInteger(convertedString4)
+isInteger1 = Number.isInteger(convertedString1);
+isInteger2 = Number.isInteger(convertedString2);
+isInteger3 = Number.isInteger(convertedString3);
+isInteger4 = Number.isInteger(convertedString4);
 
 // TODO:
 // 3. For EACH value, create a sentence showing:
@@ -80,10 +80,10 @@ isInteger4 = Number.isInteger(convertedString4)
 // Example format (you must create your own variables):
 // "Original: '42' -> Converted: 42 -> isNaN: false -> isInteger: true"
 
-var sentence1 = "Original: '" + numString1 + "' -> \tConverted: " + convertedString1 + " -> \tisNaN: " + isNaN1 + " -> \tisInteger: " + isInteger1
-var sentence2 = "Original: '" + numString2 + "' -> \tConverted: " + convertedString2 + " -> \tisNaN: " + isNaN2 + " -> \tisInteger: " + isInteger2
-var sentence3 = "Original: '" + decString + "' -> \tConverted: " + convertedString3 + " -> \tisNaN: " + isNaN3 + " -> \tisInteger: " + isInteger3
-var sentence4 = "Original: '" + nonNumString + "' -> \tConverted: " + convertedString4 + " -> \tisNaN: " + isNaN4 + " -> \tisInteger: " + isInteger4
+var sentence1 = "Original: '" + numString1 + "' -> \tConverted: " + convertedString1 + " -> \tisNaN: " + isNaN1 + " -> \tisInteger: " + isInteger1;
+var sentence2 = "Original: '" + numString2 + "' -> \tConverted: " + convertedString2 + " -> \tisNaN: " + isNaN2 + " -> \tisInteger: " + isInteger2;
+var sentence3 = "Original: '" + decString + "' -> \tConverted: " + convertedString3 + " -> \tisNaN: " + isNaN3 + " -> \tisInteger: " + isInteger3;
+var sentence4 = "Original: '" + nonNumString + "' -> \tConverted: " + convertedString4 + " -> \tisNaN: " + isNaN4 + " -> \tisInteger: " + isInteger4;
 
 // TODO:
 // 4. Combine all your results into ONE string
@@ -105,12 +105,12 @@ document.getElementById("numberConversionOutput").innerHTML = finalResult;
 // TODO:
 // 1. Create at least 2-3 numeric variables
 
-var num1 = 77
-var num2 = 82
-var num3 = 85
-var num4 = 73
-var num5 = 83
-var num6 = 93
+var num1 = 77;
+var num2 = 82;
+var num3 = 85;
+var num4 = 73;
+var num5 = 83;
+var num6 = 93;
 
 // 2. Perform calculations:
 //    - at least one addition
@@ -119,10 +119,10 @@ var num6 = 93
 // Grade score calculator
 
 // adding up the numbers to get the total
-var total = num1 + num2 + num3 + num4 + num5 + num6
+var total = num1 + num2 + num3 + num4 + num5 + num6;
 
 // calculating the average of the scores
-var average = total / 6
+var average = total / 6;
     
 // 3. Use at least ONE of the following:
 //    - toFixed()
@@ -141,22 +141,22 @@ var mathOutput = "Your Grade Scores: <br> "+ num1 + ", " + num2 + ", " + num3 + 
 
 // using my first if/else statement to check the average score and display a letter grade based on it, appending it to the result output
 if(average >= 90) {
-    mathOutput += "<br>" + "Grade: A"
+    mathOutput += "<br>" + "Grade: A";
 }else if(average >= 80) {
-    mathOutput += "<br>" + "Grade: B"
+    mathOutput += "<br>" + "Grade: B";
 }else if(average >= 70) {
-    mathOutput += "<br>" + "Grade: C"
+    mathOutput += "<br>" + "Grade: C";
 }else if(average >= 60) {
-    mathOutput += "<br>" + "Grade: D"
+    mathOutput += "<br>" + "Grade: D";
 }else {
-    mathOutput += "<br>" + "Grade: F"
+    mathOutput += "<br>" + "Grade: F";
 }
 
 // using my second if/else statement to check if the total score is a passing score (70% of total possible points) and display a message based on that, appending it to the result output
 if(total >= (6*100)*.7) {
-    mathOutput += "<br>" + "Congratulations, you are passing!"
+    mathOutput += "<br>" + "Congratulations, you are passing!";
 }else {
-    mathOutput += "<br>" + "Unfortunately, you are not passing."
+    mathOutput += "<br>" + "Unfortunately, you are not passing.";
 }
 
 
