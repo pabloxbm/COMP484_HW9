@@ -1,33 +1,34 @@
-1. Built-In Objects and Methods Used:
+### 1. Built-In Objects and Methods Used:
 
 Date() Object
 Number() Object
 document Object
 
-DATE METHODS
+#### DATE METHODS
 .getMonth()
 .getDay()
 .getFullYear()
 
-NUMBER METHODS
+#### NUMBER METHODS
 .isNaN()
 .isInteger()
 
-DOCUMENT METHODS
+#### DOCUMENT METHODS
 .getElementById()
 .textContent
 .innerHTML
 
-OTHER:
+#### OTHER:
 .toFixed()
 
-2. PAGES LINK
+### 2. PAGES LINK
 
 https://pabloxbm.github.io/COMP484_HW9/
 
-3. PATH TO IMAGE
+### 3. PATH TO IMAGE
 
-![Screenshot][comp484_javascript_demo.png]
 
-4. REFLECTION:
+![Screenshot](comp484_javascript_demo.png)
+
+### 4. REFLECTION:
 
