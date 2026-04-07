@@ -92,6 +92,16 @@ var sentence4 = "Original: '" + nonNumString + "' -> \tConverted: " + convertedS
 // combining all sentences into one string and adding <br> between to create line breaks when displayed on the page
 var finalResult = sentence1 + "<br>" + sentence2 + "<br>" + sentence3 + "<br>" + sentence4;
 
+// using an if/else statement to check if a converted value is NaN and appending a message to the final result string based on that
+if(Number.isNaN(convertedString4)) {
+    // used to <br> to create to show it is a different piece of information
+    finalResult += "<br><br>The value '" + nonNumString + "' is not a number.";
+}else {
+    // used to <br> to create to show it is a different piece of information
+    finalResult += "<br><br>The value '" + nonNumString + "' is a number.";
+}
+
+
 // TODO:
 // 5. Display the final result inside the element:
 //    id="numberConversionOutput"

@@ -18,6 +18,7 @@ h1 {
 /* Style the "cards", adding it to each element */
 /* Used the same linear gradient as the header, as well as the boxshadow and border radius */
 /* Changed the width to be smaller than header as well as padding and margins to make them more visually seperated */
+/* Changed the font size and line height for better readability*/
 .card {
     background: linear-gradient(#ffffff, #eeeeee, #e7e7e7);
     border-radius: 10px;
@@ -25,5 +26,6 @@ h1 {
     margin: 30px auto;
     width: 95%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
 }
