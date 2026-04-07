@@ -11,15 +11,14 @@ document Object
 
 #### NUMBER METHODS
 .isNaN()\
-.isInteger()
+.isInteger()\
+.toFixed()
 
 #### DOCUMENT METHODS
 .getElementById()\
 .textContent\
 .innerHTML
 
-#### OTHER:
-.toFixed()
 
 ### 2. PAGES LINK
 
